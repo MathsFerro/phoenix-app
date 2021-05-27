@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.fiap.phoenixapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PhoenixApp">
+        <activity android:name=".DetailRelatorioActivity"></activity>
+        <activity
+            android:name=".DetailSchedulingActivity"
+            android:label="" />
+        <activity
+            android:name=".HelpActivity"
+            android:label="Dúvidas"
+            android:parentActivityName=".InitialActivity" />
+        <activity
+            android:name=".RelatorioActivity"
+            android:label="Relatórios"
+            android:parentActivityName=".InitialActivity" />
+        <activity
+            android:name=".SchedulingActivity"
+            android:parentActivityName=".InitialActivity"
+            android:label="Agendamentos" />
+        <activity
+            android:name=".InitialActivity"
+            android:label="Olá, nome_pessoa" />
+        <activity
+            android:name=".MainActivity"
+            android:label="Phoenix">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
