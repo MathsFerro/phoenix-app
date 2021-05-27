@@ -1,5 +1,6 @@
 package br.com.fiap.phoenixapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import br.com.fiap.phoenixapp.databinding.ActivityAgendamentoBinding
@@ -13,9 +14,22 @@ class SchedulingActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityAgendamentoBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        loadFilters()
 
+        binding.btSchedulingWithFilters.setOnClickListener {
+            val intent = Intent(this, DetailSchedulingActivity::class.java)
+            // passar parametros do filtro
+            startActivity(intent)
+        }
+
+        binding.btSchedulingNoFilters.setOnClickListener {
+            val intent = Intent(this, DetailSchedulingActivity::class.java)
+            startActivity(intent)
+        }
+    }
+
+    private fun loadFilters() {
         val filter = createAdapters(this)
-
         binding.snPrefeituras.adapter = filter["prefeituras"]
         binding.snRelatorios.adapter = filter["relatorios"]
     }

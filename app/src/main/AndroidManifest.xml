@@ -9,10 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PhoenixApp">
-        <activity android:name=".DetailRelatorioActivity"></activity>
+        <activity
+            android:name=".DetailRelatorioActivity"
+            android:parentActivityName=".RelatorioActivity"
+            >
+
+        </activity>
         <activity
             android:name=".DetailSchedulingActivity"
-            android:label="" />
+            android:label=""
+            android:parentActivityName=".SchedulingActivity"/>
         <activity
             android:name=".HelpActivity"
             android:label="Dúvidas"

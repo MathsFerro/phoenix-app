@@ -22,6 +22,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Relatório:"
+            android:textSize="15sp"
             android:textColor="#000000"
             android:textStyle="bold" />
 
@@ -30,6 +31,7 @@
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textSize="15sp"
             android:text="tipo_relatorio"
             android:textColor="#000000"
             android:textStyle="bold" />
@@ -51,6 +53,7 @@
             android:layout_weight="1"
             android:text="Próxima Execução:"
             android:textColor="#000000"
+            android:textSize="15sp"
             android:textStyle="bold" />
 
         <TextView
@@ -58,6 +61,7 @@
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textSize="15sp"
             android:text="data_execucao"
             android:textColor="#000000"
             android:textStyle="bold" />
@@ -77,7 +81,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Pular próxima execução"
-            android:textSize="10sp" />
+            android:textSize="11sp" />
 
         <Button
             android:id="@+id/button2"
@@ -87,7 +91,7 @@
             android:layout_marginEnd="5dp"
             android:layout_weight="1"
             android:text="Editar"
-            android:textSize="10sp" />
+            android:textSize="11sp" />
 
         <Button
             android:id="@+id/button6"
