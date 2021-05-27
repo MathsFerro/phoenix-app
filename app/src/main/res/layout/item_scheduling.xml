@@ -8,7 +8,7 @@
     android:layout_marginEnd="20dp"
     android:gravity="center"
     android:orientation="vertical"
-    >
+    android:background="@drawable/division_item">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Relatório:"
-            android:textSize="15sp"
+            android:textSize="14sp"
             android:textColor="#000000"
             android:textStyle="bold" />
 
@@ -31,7 +31,7 @@
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textSize="15sp"
+            android:textSize="14sp"
             android:text="tipo_relatorio"
             android:textColor="#000000"
             android:textStyle="bold" />
@@ -53,7 +53,7 @@
             android:layout_weight="1"
             android:text="Próxima Execução:"
             android:textColor="#000000"
-            android:textSize="15sp"
+            android:textSize="14sp"
             android:textStyle="bold" />
 
         <TextView
@@ -61,7 +61,7 @@
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textSize="15sp"
+            android:textSize="14sp"
             android:text="data_execucao"
             android:textColor="#000000"
             android:textStyle="bold" />
@@ -81,22 +81,22 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Pular próxima execução"
-            android:textSize="11sp" />
+            android:textSize="10sp" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="5dp"
-            android:layout_marginEnd="5dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
             android:layout_weight="1"
             android:text="Editar"
-            android:textSize="11sp" />
+            android:textSize="10sp" />
 
         <Button
             android:id="@+id/button6"
             style="@style/Widget.MaterialComponents.Button.Icon"
-            android:layout_width="150dp"
+            android:layout_width="160dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             app:icon="@android:drawable/ic_menu_delete" />

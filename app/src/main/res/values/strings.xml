@@ -10,4 +10,10 @@
 
     <string name="amanha_19">amanhã às 19:00</string>
     <string name="amanha_21">amanhã às 21:00</string>
+
+    <string name="como_usar_o_aplicativo">Como usar o aplicativo ?</string>
+    <string name="como_solicitar_uma_melhoria">Como solicitar uma melhoria ?</string>
+    <string name="como_ter_acesso_ao_aplicativo_web">Como ter acesso ao aplicativo WEB ?</string>
+    <string name="como_solicitar_uma_nova_logica_de_comparacao">Como solicitar uma nova logica de comparação ?</string>
+
 </resources>
