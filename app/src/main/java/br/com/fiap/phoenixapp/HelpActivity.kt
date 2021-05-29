@@ -14,7 +14,6 @@ class HelpActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityHelpBinding.inflate(layoutInflater)
 
-
         val data = HelpDataSource().loadFakeHelp()
         binding.rvDuvidas.adapter = HelpAdapter(this, data)
 

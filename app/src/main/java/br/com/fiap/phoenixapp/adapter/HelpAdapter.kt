@@ -10,18 +10,18 @@ import br.com.fiap.phoenixapp.R
 import br.com.fiap.phoenixapp.models.Help
 
 class HelpAdapter(val context: Context, val dataset: List<Help>):
-        RecyclerView.Adapter<HelpAdapter.HelpSchedulingHolder>() {
+        RecyclerView.Adapter<HelpAdapter.HelpViewHolder>() {
 
-    class HelpSchedulingHolder(val view: View): RecyclerView.ViewHolder(view) {
+    class HelpViewHolder(val view: View): RecyclerView.ViewHolder(view) {
         val tvTitleHelp: TextView = view.findViewById(R.id.tvTitleHelp)
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HelpSchedulingHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HelpViewHolder {
         val adapterHolder = LayoutInflater.from(parent.context).inflate(R.layout.item_help, parent, false)
-        return HelpSchedulingHolder(adapterHolder)
+        return HelpViewHolder(adapterHolder)
     }
 
-    override fun onBindViewHolder(holder: HelpSchedulingHolder, position: Int) {
+    override fun onBindViewHolder(holder: HelpViewHolder, position: Int) {
         val item = dataset[position]
         holder.tvTitleHelp.text = context.resources.getString(item.titleId)
     }

@@ -13,8 +13,8 @@ class SchedulingAdapter(val context: Context, val dataset: List<Schedule>):
         RecyclerView.Adapter<SchedulingAdapter.SchedulingViewHolder>() {
 
     class SchedulingViewHolder(val view: View): RecyclerView.ViewHolder(view) {
-        val tvTypeRelatorio: TextView = view.findViewById(R.id.tvTypeRelatorio)
-        val tvExecution: TextView = view.findViewById(R.id.tvExecution)
+        val tvTypeRelatorio: TextView = view.findViewById(R.id.tvReport)
+        val tvExecution: TextView = view.findViewById(R.id.tvDate)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SchedulingViewHolder {

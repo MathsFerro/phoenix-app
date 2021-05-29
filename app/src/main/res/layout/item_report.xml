@@ -18,9 +18,8 @@
 
         <TextView
             android:id="@+id/tvRep"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:text="Relatório:"
             android:textSize="14sp"
             android:textColor="#000000"
@@ -31,6 +30,7 @@
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:layout_marginLeft="20dp"
             android:textSize="14sp"
             android:text="tipo_relatorio"
             android:textColor="#000000"
@@ -48,10 +48,9 @@
 
         <TextView
             android:id="@+id/tvDt"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Próxima Execução:"
+            android:text="Data:"
             android:textColor="#000000"
             android:textSize="14sp"
             android:textStyle="bold" />
@@ -61,6 +60,7 @@
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:layout_marginLeft="49dp"
             android:textSize="14sp"
             android:text="data_execucao"
             android:textColor="#000000"
@@ -68,39 +68,11 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:gravity="center"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/button"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Pular próxima execução"
-            android:textSize="10sp" />
-
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="3dp"
-            android:layout_marginEnd="3dp"
-            android:layout_weight="1"
-            android:text="Editar"
-            android:textSize="10sp" />
-
-        <Button
-            android:id="@+id/button6"
-            style="@style/Widget.MaterialComponents.Button.Icon"
-            android:layout_width="160dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            app:icon="@android:drawable/ic_menu_delete" />
-
-    </LinearLayout>
+    <Button
+        android:id="@+id/btDetailItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ver Detalhes"
+        android:layout_weight="1" />
 
 </LinearLayout>

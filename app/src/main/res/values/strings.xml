@@ -6,10 +6,13 @@
     <string name="usuario">Usuário</string>
 
     <string name="receita">Receita</string>
-    <string name="despesa">Despesa</string>
+    <string name="despesas">Despesas</string>
 
     <string name="amanha_19">amanhã às 19:00</string>
     <string name="amanha_21">amanhã às 21:00</string>
+    <string name="date_20210529">29/05/2021</string>
+    <string name="date_20210429">29/04/2021</string>
+    <string name="date_20210329">29/03/2021</string>
 
     <string name="como_usar_o_aplicativo">Como usar o aplicativo ?</string>
     <string name="como_solicitar_uma_melhoria">Como solicitar uma melhoria ?</string>

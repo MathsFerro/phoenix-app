@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import br.com.fiap.phoenixapp.databinding.ActivityAgendamentoBinding
+import br.com.fiap.phoenixapp.utils.SelectedFilters
 import br.com.fiap.phoenixapp.utils.createAdapters
 
 class SchedulingActivity : AppCompatActivity() {
@@ -17,8 +18,13 @@ class SchedulingActivity : AppCompatActivity() {
         loadFilters()
 
         binding.btSchedulingWithFilters.setOnClickListener {
+            val selectedFilters = SelectedFilters (
+                binding.snPrefeituras.selectedItem.toString(),
+                binding.snRelatorios.selectedItem.toString()
+            )
+
             val intent = Intent(this, DetailSchedulingActivity::class.java)
-            // passar parametros do filtro
+                    .putExtra("selectedFilters", selectedFilters)
             startActivity(intent)
         }
 
@@ -32,5 +38,6 @@ class SchedulingActivity : AppCompatActivity() {
         val filter = createAdapters(this)
         binding.snPrefeituras.adapter = filter["prefeituras"]
         binding.snRelatorios.adapter = filter["relatorios"]
+
     }
 }

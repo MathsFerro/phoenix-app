@@ -2,14 +2,15 @@ package br.com.fiap.phoenixapp.data
 
 import android.content.Context
 import br.com.fiap.phoenixapp.R
-import br.com.fiap.phoenixapp.models.Schedule
+import br.com.fiap.phoenixapp.models.Report
 import br.com.fiap.phoenixapp.utils.SelectedFilters
 
-class ScheduleDataSource {
-    fun loadFakeScheduling(context: Context, filters: SelectedFilters? = null): List<Schedule> {
+class ReportDataSource {
+    fun loadFakeReports(context: Context, filters: SelectedFilters? = null): List<Report> {
         val listSchedule = listOf(
-            Schedule(R.string.receita, R.string.amanha_19),
-            Schedule(R.string.despesas, R.string.amanha_21)
+            Report(R.string.receita, R.string.date_20210529),
+            Report(R.string.receita, R.string.date_20210329),
+            Report(R.string.despesas, R.string.date_20210429)
         )
 
         return if(filters!=null) {

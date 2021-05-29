@@ -16,7 +16,6 @@ class MainActivity : AppCompatActivity() {
 
         binding.btSend.setOnClickListener {
             val intent = Intent(this, InitialActivity::class.java)
-            //intent.putExtra("user",userInfo)
             startActivity(intent)
             finish()
         }
